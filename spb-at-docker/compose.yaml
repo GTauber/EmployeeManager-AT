@@ -1,0 +1,35 @@
+services:
+  spb-at-mongodb:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_DATABASE: employee_mng-mongo
+      MONGO_INITDB_ROOT_PASSWORD: secret
+      MONGO_INITDB_ROOT_USERNAME: tauber
+    ports:
+      - '27017:27017'
+    networks:
+      - spbAtNetwork
+
+  spb-at-mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: employee_mng
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: verySecret
+      MYSQL_USER: tauber
+    ports:
+      - '3306:3306'
+    networks:
+      - spbAtNetwork
+
+  spb-at-redis:
+    image: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - spbAtNetwork
+
+networks:
+  spbAtNetwork:
+    driver: bridge

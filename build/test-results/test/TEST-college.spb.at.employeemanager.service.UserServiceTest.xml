@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="college.spb.at.employeemanager.service.UserServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-06-23T01:12:32" hostname="Gabriels-MacBook-Pro.local" time="0.069">
+  <properties/>
+  <testcase name="Should fetch user by id when user exists" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.06"/>
+  <testcase name="Should throw exception when user does not exist" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.001"/>
+  <testcase name="Should update user successfully" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.001"/>
+  <testcase name="Should throw exception when user by id does not exist" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.001"/>
+  <testcase name="Should throw exception when deleting user that does not exist" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.001"/>
+  <testcase name="Should create user successfully" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.001"/>
+  <testcase name="Should fetch all users successfully" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.001"/>
+  <testcase name="Should delete user successfully" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.001"/>
+  <testcase name="Should throw exception when updating user that does not exist" classname="college.spb.at.employeemanager.service.UserServiceTest" time="0.001"/>
+  <system-out><![CDATA[2024-06-22T22:12:32.521-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Fetching user with ID: testId
+2024-06-22T22:12:32.521-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User found with ID: testId
+2024-06-22T22:12:32.522-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Loading user by email: test@test.com
+2024-06-22T22:12:32.522-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User found by email: Optional.empty
+2024-06-22T22:12:32.523-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Updating user with ID: testId
+2024-06-22T22:12:32.523-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User updated with ID: 1
+2024-06-22T22:12:32.525-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Fetching user with ID: testId
+2024-06-22T22:12:32.525-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User not found with ID: testId
+2024-06-22T22:12:32.526-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Deleting user with ID: testId
+2024-06-22T22:12:32.526-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User not found with ID: testId
+2024-06-22T22:12:32.527-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Creating a new user
+2024-06-22T22:12:32.527-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User created with ID: 1
+2024-06-22T22:12:32.528-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Fetching all users
+2024-06-22T22:12:32.528-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Deleting user with ID: testId
+2024-06-22T22:12:32.529-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User deleted with ID: testId
+2024-06-22T22:12:32.530-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Updating user with ID: testId
+2024-06-22T22:12:32.530-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User not found with ID: testId
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

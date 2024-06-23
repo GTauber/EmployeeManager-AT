@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="college.spb.at.employeemanager.service.DepartmentServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-06-23T01:12:32" hostname="Gabriels-MacBook-Pro.local" time="0.082">
+  <properties/>
+  <testcase name="Should throw exception when updating department that does not exist" classname="college.spb.at.employeemanager.service.DepartmentServiceTest" time="0.074"/>
+  <testcase name="Should fetch department by id when department exists" classname="college.spb.at.employeemanager.service.DepartmentServiceTest" time="0.001"/>
+  <testcase name="Should fetch all departments successfully" classname="college.spb.at.employeemanager.service.DepartmentServiceTest" time="0.001"/>
+  <testcase name="Should throw exception when deleting department that does not exist" classname="college.spb.at.employeemanager.service.DepartmentServiceTest" time="0.002"/>
+  <testcase name="Should update department successfully when department exists" classname="college.spb.at.employeemanager.service.DepartmentServiceTest" time="0.001"/>
+  <testcase name="Should create department successfully" classname="college.spb.at.employeemanager.service.DepartmentServiceTest" time="0.001"/>
+  <testcase name="Should delete department successfully" classname="college.spb.at.employeemanager.service.DepartmentServiceTest" time="0.001"/>
+  <testcase name="Should throw exception when department by id does not exist" classname="college.spb.at.employeemanager.service.DepartmentServiceTest" time="0.001"/>
+  <system-out><![CDATA[2024-06-22T22:12:32.396-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Updating department with ID: 1
+2024-06-22T22:12:32.397-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Department not found with ID: 1
+2024-06-22T22:12:32.398-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Fetching department with ID: 1
+2024-06-22T22:12:32.398-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Department found with ID: 1
+2024-06-22T22:12:32.399-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Fetching all departments
+2024-06-22T22:12:32.400-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Deleting department with ID: 1
+2024-06-22T22:12:32.401-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Department not found with ID: 1
+2024-06-22T22:12:32.402-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Updating department with ID: 1
+2024-06-22T22:12:32.402-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Department updated with ID: 1
+2024-06-22T22:12:32.403-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Creating a new department
+2024-06-22T22:12:32.403-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Department created with ID: 1
+2024-06-22T22:12:32.404-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Deleting department with ID: 1
+2024-06-22T22:12:32.404-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Department deleted with ID: 1
+2024-06-22T22:12:32.405-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Fetching department with ID: 1
+2024-06-22T22:12:32.405-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.DepartmentService        : Department not found with ID: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="college.spb.at.employeemanager.controller.DepartmentControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-06-23T01:12:32" hostname="Gabriels-MacBook-Pro.local" time="0.186">
+  <properties/>
+  <testcase name="Should fetch department by id when department exists" classname="college.spb.at.employeemanager.controller.DepartmentControllerTest" time="0.137"/>
+  <testcase name="Should fetch all departments successfully" classname="college.spb.at.employeemanager.controller.DepartmentControllerTest" time="0.01"/>
+  <testcase name="Should update department successfully when department exists" classname="college.spb.at.employeemanager.controller.DepartmentControllerTest" time="0.018"/>
+  <testcase name="Should create department successfully" classname="college.spb.at.employeemanager.controller.DepartmentControllerTest" time="0.01"/>
+  <testcase name="Should delete department successfully" classname="college.spb.at.employeemanager.controller.DepartmentControllerTest" time="0.007"/>
+  <system-out><![CDATA[2024-06-22T22:12:32.104-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.105-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.105-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.135-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to fetch department with ID: 1
+2024-06-22T22:12:32.137-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Department fetched with ID: 1
+2024-06-22T22:12:32.160-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.160-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.160-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.161-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to fetch all departments
+2024-06-22T22:12:32.161-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Fetched 1 departments
+2024-06-22T22:12:32.171-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.171-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.171-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.181-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to update department with ID: 1
+2024-06-22T22:12:32.181-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Department updated with ID: 1
+2024-06-22T22:12:32.189-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.189-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.189-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.192-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to create a new department
+2024-06-22T22:12:32.192-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : New department created with ID: 1
+2024-06-22T22:12:32.198-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.198-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.199-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-22T22:12:32.200-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to delete department with ID: 1
+2024-06-22T22:12:32.200-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Department deleted with ID: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

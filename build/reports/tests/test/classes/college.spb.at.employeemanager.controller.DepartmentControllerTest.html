@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - DepartmentControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>DepartmentControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/college.spb.at.employeemanager.controller.html">college.spb.at.employeemanager.controller</a> &gt; DepartmentControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.182s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Should create department successfully</td>
+<td class="success">shouldCreateDepartment()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should delete department successfully</td>
+<td class="success">shouldDeleteDepartment()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should fetch all departments successfully</td>
+<td class="success">shouldGetAllDepartments()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should fetch department by id when department exists</td>
+<td class="success">shouldGetDepartmentById()</td>
+<td class="success">0.137s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should update department successfully when department exists</td>
+<td class="success">shouldUpdateDepartmentWhenDepartmentExists()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-06-22T22:12:32.104-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.105-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.105-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.135-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to fetch department with ID: 1
+2024-06-22T22:12:32.137-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Department fetched with ID: 1
+2024-06-22T22:12:32.160-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.160-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.160-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.161-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to fetch all departments
+2024-06-22T22:12:32.161-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Fetched 1 departments
+2024-06-22T22:12:32.171-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.171-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.171-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.181-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to update department with ID: 1
+2024-06-22T22:12:32.181-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Department updated with ID: 1
+2024-06-22T22:12:32.189-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.189-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.189-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.192-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to create a new department
+2024-06-22T22:12:32.192-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : New department created with ID: 1
+2024-06-22T22:12:32.198-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.198-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.199-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-22T22:12:32.200-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Received request to delete department with ID: 1
+2024-06-22T22:12:32.200-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.DepartmentController  : Department deleted with ID: 1
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at Jun 22, 2024, 10:12:32 PM</p>
+</div>
+</div>
+</body>
+</html>

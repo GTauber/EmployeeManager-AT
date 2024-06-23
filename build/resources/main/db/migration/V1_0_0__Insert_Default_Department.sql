@@ -1,0 +1,1 @@
+INSERT INTO department (name, local) VALUES ('Sales', 'Building A');

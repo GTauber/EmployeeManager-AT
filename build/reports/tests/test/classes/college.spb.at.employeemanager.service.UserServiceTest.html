@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/college.spb.at.employeemanager.service.html">college.spb.at.employeemanager.service</a> &gt; UserServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.068s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Should create user successfully</td>
+<td class="success">shouldCreateUser()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should delete user successfully</td>
+<td class="success">shouldDeleteUser()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should fetch all users successfully</td>
+<td class="success">shouldGetAllUsers()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should fetch user by id when user exists</td>
+<td class="success">shouldGetUserById()</td>
+<td class="success">0.060s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should throw exception when deleting user that does not exist</td>
+<td class="success">shouldThrowExceptionWhenDeletingUserThatDoesNotExist()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should throw exception when updating user that does not exist</td>
+<td class="success">shouldThrowExceptionWhenUpdatingUserThatDoesNotExist()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should throw exception when user by id does not exist</td>
+<td class="success">shouldThrowExceptionWhenUserByIdDoesNotExist()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should throw exception when user does not exist</td>
+<td class="success">shouldThrowExceptionWhenUserDoesNotExist()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Should update user successfully</td>
+<td class="success">shouldUpdateUser()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-06-22T22:12:32.521-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Fetching user with ID: testId
+2024-06-22T22:12:32.521-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User found with ID: testId
+2024-06-22T22:12:32.522-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Loading user by email: test@test.com
+2024-06-22T22:12:32.522-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User found by email: Optional.empty
+2024-06-22T22:12:32.523-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Updating user with ID: testId
+2024-06-22T22:12:32.523-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User updated with ID: 1
+2024-06-22T22:12:32.525-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Fetching user with ID: testId
+2024-06-22T22:12:32.525-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User not found with ID: testId
+2024-06-22T22:12:32.526-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Deleting user with ID: testId
+2024-06-22T22:12:32.526-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User not found with ID: testId
+2024-06-22T22:12:32.527-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Creating a new user
+2024-06-22T22:12:32.527-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User created with ID: 1
+2024-06-22T22:12:32.528-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Fetching all users
+2024-06-22T22:12:32.528-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Deleting user with ID: testId
+2024-06-22T22:12:32.529-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User deleted with ID: testId
+2024-06-22T22:12:32.530-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : Updating user with ID: testId
+2024-06-22T22:12:32.530-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.UserService              : User not found with ID: testId
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at Jun 22, 2024, 10:12:32 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+services:
+  spb-at-mongodb:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_DATABASE: employee_mng-mongo
+    ports:
+      - '27017:27017'
+    networks:
+      - spbAtNetwork
+
+  spb-at-mysql:
+    image: mysql:latest
+    container_name: spb-at-mysql
+    environment:
+      MYSQL_DATABASE: employee_mng
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: verySecret
+      MYSQL_USER: tauber
+    ports:
+      - '3306:3306'
+    networks:
+      - spbAtNetwork
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  spb-at-redis:
+    image: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - spbAtNetwork
+
+  spring-app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+#      SPRING_DATASOURCE_URL: jdbc:mysql://spb-at-mysql:3306/employee_mng
+#      SPRING_DATASOURCE_USERNAME: tauber
+#      SPRING_DATASOURCE_PASSWORD: secret
+#      SPRING_DATA_MONGODB_URI: mongodb://spb-at-mongodb:27017/employee_mng-mongo
+#      SPRING_FLYWAY_URL: jdbc:mysql://spb-at-mysql:3306/employee_mng
+    networks:
+      - spbAtNetwork
+    depends_on:
+      spb-at-mysql:
+        condition: service_healthy
+      spb-at-mongodb:
+        condition: service_started
+      spb-at-redis:
+        condition: service_started
+networks:
+  spbAtNetwork:
+    driver: bridge

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="college.spb.at.employeemanager.controller.UserControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-06-23T01:12:32" hostname="Gabriels-MacBook-Pro.local" time="0.057">
+  <properties/>
+  <testcase name="Should fetch user by id when user exists" classname="college.spb.at.employeemanager.controller.UserControllerTest" time="0.029"/>
+  <testcase name="Should update user successfully when user exists" classname="college.spb.at.employeemanager.controller.UserControllerTest" time="0.01"/>
+  <testcase name="Should create user successfully" classname="college.spb.at.employeemanager.controller.UserControllerTest" time="0.007"/>
+  <testcase name="Should fetch all users successfully" classname="college.spb.at.employeemanager.controller.UserControllerTest" time="0.005"/>
+  <testcase name="Should delete user successfully" classname="college.spb.at.employeemanager.controller.UserControllerTest" time="0.005"/>
+  <system-out><![CDATA[2024-06-22T22:12:32.290-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.290-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.290-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.291-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : Received request to fetch user with ID: 1
+2024-06-22T22:12:32.291-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : User fetched with ID: 1
+2024-06-22T22:12:32.299-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.299-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.299-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.303-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : Received request to update user with ID: 1
+2024-06-22T22:12:32.303-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : User updated with ID: 1
+2024-06-22T22:12:32.308-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.308-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.308-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.310-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : Received request to create a new user
+2024-06-22T22:12:32.311-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : New user created with ID: 1
+2024-06-22T22:12:32.315-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.315-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.316-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-22T22:12:32.316-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : Received request to fetch all users
+2024-06-22T22:12:32.316-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : Fetched 1 users
+2024-06-22T22:12:32.321-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-06-22T22:12:32.321-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-22T22:12:32.321-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-06-22T22:12:32.322-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : Received request to delete user with ID: 1
+2024-06-22T22:12:32.322-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.controller.UserController        : User deleted with ID: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

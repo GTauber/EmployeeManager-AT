@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="college.spb.at.employeemanager.service.EmployeeServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-06-23T01:12:32" hostname="Gabriels-MacBook-Pro.local" time="0.054">
+  <properties/>
+  <testcase name="Should delete employee successfully" classname="college.spb.at.employeemanager.service.EmployeeServiceTest" time="0.046"/>
+  <testcase name="Should throw exception when deleting employee that does not exist" classname="college.spb.at.employeemanager.service.EmployeeServiceTest" time="0.002"/>
+  <testcase name="Should fetch employee by id when employee exists" classname="college.spb.at.employeemanager.service.EmployeeServiceTest" time="0.001"/>
+  <testcase name="Should throw exception when updating employee that does not exist" classname="college.spb.at.employeemanager.service.EmployeeServiceTest" time="0.001"/>
+  <testcase name="Should throw exception when employee by id does not exist" classname="college.spb.at.employeemanager.service.EmployeeServiceTest" time="0.001"/>
+  <testcase name="Should fetch all employees successfully" classname="college.spb.at.employeemanager.service.EmployeeServiceTest" time="0.001"/>
+  <testcase name="Should create employee successfully" classname="college.spb.at.employeemanager.service.EmployeeServiceTest" time="0.001"/>
+  <testcase name="shouldUpdateEmployeeWhenEmployeeExists()" classname="college.spb.at.employeemanager.service.EmployeeServiceTest" time="0.001"/>
+  <system-out><![CDATA[2024-06-22T22:12:32.452-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Deleting employee with ID: 1
+2024-06-22T22:12:32.452-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Employee deleted with ID: 1
+2024-06-22T22:12:32.453-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Deleting employee with ID: 1
+2024-06-22T22:12:32.454-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Employee not found with ID: 1
+2024-06-22T22:12:32.455-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Fetching employee with ID: 1
+2024-06-22T22:12:32.455-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Employee found with ID: 1
+2024-06-22T22:12:32.456-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Updating employee with ID: 1
+2024-06-22T22:12:32.456-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Employee not found with ID: 1
+2024-06-22T22:12:32.457-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Fetching employee with ID: 1
+2024-06-22T22:12:32.457-03:00 ERROR 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Employee not found with ID: 1
+2024-06-22T22:12:32.458-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Fetching all employees
+2024-06-22T22:12:32.459-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Creating a new employee
+2024-06-22T22:12:32.459-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Employee created with ID: 1
+2024-06-22T22:12:32.460-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Updating employee with ID: 1
+2024-06-22T22:12:32.460-03:00  INFO 10427 --- [EmployeeManager] [    Test worker] c.s.a.e.service.EmployeeService          : Employee updated with ID: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
